@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>3 mistakes I made when learning React Native | Valehelle</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="3 mistakes I made when learning React Native" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="React Native is a great platform for you to target both IOS and Android simultaneously without sacrificing your app performance. However, not all things are perfect. Here are some things that I learn while working on a React Native project." />
+<meta property="og:description" content="React Native is a great platform for you to target both IOS and Android simultaneously without sacrificing your app performance. However, not all things are perfect. Here are some things that I learn while working on a React Native project." />
+<link rel="canonical" href="http://0.0.0.0:3000/react-native/2018/02/26/3-mistake-I-made-when-learning-react-native.html" />
+<meta property="og:url" content="http://0.0.0.0:3000/react-native/2018/02/26/3-mistake-I-made-when-learning-react-native.html" />
+<meta property="og:site_name" content="Valehelle" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-26T06:35:45+00:00" />
+<script type="application/ld+json">
+{"description":"React Native is a great platform for you to target both IOS and Android simultaneously without sacrificing your app performance. However, not all things are perfect. Here are some things that I learn while working on a React Native project.","@type":"BlogPosting","url":"http://0.0.0.0:3000/react-native/2018/02/26/3-mistake-I-made-when-learning-react-native.html","headline":"3 mistakes I made when learning React Native","dateModified":"2018-02-26T06:35:45+00:00","datePublished":"2018-02-26T06:35:45+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:3000/react-native/2018/02/26/3-mistake-I-made-when-learning-react-native.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:3000/feed.xml" title="Valehelle" />
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/">Valehelle</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">3 mistakes I made when learning React Native</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-02-26T06:35:45+00:00" itemprop="datePublished">
+        
+        Feb 26, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h5 id="react-native-is-a-great-platform-for-you-to-target-both-ios-and-android-simultaneously-without-sacrificing-your-app-performance-however-not-all-things-are-perfect-here-are-some-things-that-i-learn-while-working-on-a-react-native-project">React Native is a great platform for you to target both IOS and Android simultaneously without sacrificing your app performance. However, not all things are perfect. Here are some things that I learn while working on a React Native project.</h5>
+
+<h2 id="1-trying-to-learn-react-native-and-redux-at-the-same-time">1. Trying to learn React Native and Redux at the same time.</h2>
+<p>When I first started learning React Native, I made a mistake of learning Redux at the same time. I thought that you cannot do one without the other. This make learning simple things alot more complex than it should. You should start with the basic. Create a project using only React Native. When you are comfortable with it, then you can move to learning Redux.</p>
+
+<h2 id="2-never-state-the-version-number">2. Never state the version number.</h2>
+<p>When importing any library, always include the <strong>version number only</strong>. Never leave it blank or “^” .</p>
+
+<pre><code class="language-javscript">//This is bad
+"redux": "3.6.0",
+"redux-logger": "^3.0.1"
+</code></pre>
+<pre><code class="language-javscript">//This is good
+"redux": "3.6.0",
+"redux-logger": "3.0.1"
+</code></pre>
+<p>The reason for this is simple. If you did not put a version number, bundler will always install the latest version. Lets say your original project uses redux version  3.5.0.When you clone from a repository like github, because you did not specify your redux version, bundler will install the latest version. This will make your clone project out of sync with your original one and this can cause issue with some 3rd party library.</p>
+
+<h2 id="3-using-redux-for-everything">3. Using Redux for everything.</h2>
+<p>Redux is a powerful tool. But you should not used it for everything. In my early days of using React Native I store everything in Redux. Including a simple input text field. Not only that this add to the length of code,but it also complex things that was simple. Use Redux only when it makes sense, where that data is needed globally. Otherwise, local variable is just fine.</p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/react-native/2018/02/26/3-mistake-I-made-when-learning-react-native.html" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Valehelle</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Valehelle
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:hazmiirfan92@gmail.com">hazmiirfan92@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/valehelle"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">valehelle</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/TehAisPerlis"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">TehAisPerlis</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This blog is a way for me to share my experience in programming. My project involve Android, React Native and Rails.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
