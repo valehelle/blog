@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>When to use native instead of React Native | Valehelle</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="When to use native instead of React Native" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In my opinion, React Native can be used in 90% of projects. However, they are some cases where you are better off coding in native. If you say no to all of this questions then React Native is definitely for you." />
+<meta property="og:description" content="In my opinion, React Native can be used in 90% of projects. However, they are some cases where you are better off coding in native. If you say no to all of this questions then React Native is definitely for you." />
+<link rel="canonical" href="http://0.0.0.0:3000/blog/react-native/2018/02/27/when-to-use-native-instead-of-react-native.html" />
+<meta property="og:url" content="http://0.0.0.0:3000/blog/react-native/2018/02/27/when-to-use-native-instead-of-react-native.html" />
+<meta property="og:site_name" content="Valehelle" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-27T03:55:00+00:00" />
+<script type="application/ld+json">
+{"description":"In my opinion, React Native can be used in 90% of projects. However, they are some cases where you are better off coding in native. If you say no to all of this questions then React Native is definitely for you.","@type":"BlogPosting","url":"http://0.0.0.0:3000/blog/react-native/2018/02/27/when-to-use-native-instead-of-react-native.html","headline":"When to use native instead of React Native","dateModified":"2018-02-27T03:55:00+00:00","datePublished":"2018-02-27T03:55:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:3000/blog/react-native/2018/02/27/when-to-use-native-instead-of-react-native.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:3000/blog/feed.xml" title="Valehelle" />
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/blog/">Valehelle</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">When to use native instead of React Native</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-02-27T03:55:00+00:00" itemprop="datePublished">
+        
+        Feb 27, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h5 id="in-my-opinion-react-native-can-be-used-in-90-of-projects-however-they-are-some-cases-where-you-are-better-off-coding-in-native-if-you-say-no-to-all-of-this-questions-then-react-native-is-definitely-for-you">In my opinion, React Native can be used in 90% of projects. However, they are some cases where you are better off coding in native. If you say no to all of this questions then React Native is definitely for you.</h5>
+
+<h2 id="1-do-you-need-to-target-both-platform">1. Do you need to target both platform?</h2>
+<p>If you only target 1 platform then the benefit of React Native might not be so clear.(I still think you should consider React Native)</p>
+
+<h2 id="2-do-you-use-alot-of-native-module">2. Do you use alot of native module?</h2>
+<p>If you are planning to use a lot of native API then you should first check to see whether there is already an existing library for React Native. Although you can still use native API by using the bridge module it would still take considerable amount of effort.</p>
+
+<h2 id="3-does-your-app-uses-alot-of-animation">3. Does your app uses alot of animation?</h2>
+<p>If your app depends alot on animation like games then React Native might not be suitable.</p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/blog/react-native/2018/02/27/when-to-use-native-instead-of-react-native.html" hidden></a>
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Valehelle</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Valehelle
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:hazmiirfan92@gmail.com">hazmiirfan92@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/valehelle"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">valehelle</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/TehAisPerlis"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">TehAisPerlis</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This blog is a way for me to share my experience in programming. My project involve Android, React Native and Rails.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
